@@ -106,6 +106,54 @@
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
+
+    .team-img{
+      width: 600px;
+    }
+
+    .team-photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .team-photos img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #eea10c;
+    }
+
+    @media (max-width: 600px) {
+      .slide {
+        width: 90vw;
+        padding: 20px;
+      }
+      .visible{
+        margin: 0 auto;
+
+      }
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 0.7rem;
+      }
+
+      p {
+        font-size: 0.5rem;
+      }
+
+      .btns button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -127,7 +175,7 @@
   <div class="slide hidden" id="slide3">
     <h2>Наша команда</h2>
     <p>Команда з 8 студентів, яка разом працювала над розробкою цієї платформи, ділилася задачами, дизайном, API та логікою.</p>
-    <img class="gif" src="https://i.pinimg.com/474x/40/fb/1f/40fb1f40e7d8d2eb8fc3d9f296896993.jpg" alt="Командна робота" />
+    <img class="team-img" src="./team.png" alt="Фітнес гіф" />
   </div>
 
   <div class="slide hidden" id="slide4">
